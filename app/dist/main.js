@@ -1,18 +1,26 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var electron_1 = require("electron");
 var path = require("path");
+var fs = require("fs");
 function createWindow() {
     // Create the browser window.
     var mainWindow = new electron_1.BrowserWindow({
         height: 600,
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js')
+            preload: path.join(__dirname, 'preload.js'),
         },
-        width: 800
+        width: 800,
     });
+    // Path when running electron executable
+    var pathIndex = './index.html';
+    if (fs.existsSync(path.join(__dirname, '../../dist/electron-angular-helloworld/index.html'))) {
+        // Path when running electron in local folder
+        pathIndex = '../../dist/electron-angular-helloworld/index.html';
+    }
+    pathIndex = '../../dist/electron-angular-helloworld/index.html';
     // and load the index.html of the app.
-    mainWindow.loadFile(path.join(__dirname, '../../dist/electron-angular-helloworld/index.html'));
+    mainWindow.loadFile(pathIndex);
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
 }
@@ -36,6 +44,4 @@ electron_1.app.on('window-all-closed', function () {
         electron_1.app.quit();
     }
 });
-// In this file you can include the rest of your app"s specific main process
-// code. You can also put them in separate files and require them here.
 //# sourceMappingURL=main.js.map

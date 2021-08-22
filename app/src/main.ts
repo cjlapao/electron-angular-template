@@ -1,5 +1,7 @@
 import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
+import * as fs from 'fs';
+import * as url from 'url';
 
 function createWindow() {
   // Create the browser window.
@@ -11,10 +13,20 @@ function createWindow() {
     width: 800,
   });
 
+  // Path when running electron executable
+  let pathIndex = './index.html';
+
+  if (
+    fs.existsSync(
+      path.join(__dirname, '../../dist/electron-angular-helloworld/index.html')
+    )
+  ) {
+    // Path when running electron in local folder
+    pathIndex = '../../dist/electron-angular-helloworld/index.html';
+  }
+  pathIndex = '../../dist/electron-angular-helloworld/index.html';
   // and load the index.html of the app.
-  mainWindow.loadFile(
-    path.join(__dirname, '../../dist/electron-angular-helloworld/index.html')
-  );
+  mainWindow.loadFile(pathIndex);
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
@@ -41,6 +53,3 @@ app.on('window-all-closed', () => {
     app.quit();
   }
 });
-
-// In this file you can include the rest of your app"s specific main process
-// code. You can also put them in separate files and require them here.
