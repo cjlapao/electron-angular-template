@@ -6,6 +6,8 @@ dist/
 /tmp
 out-tsc
 **/out-tsc
+release/
+**/release
 # Only exists if Bazel was run
 /bazel-out
 

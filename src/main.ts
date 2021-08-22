@@ -3,9 +3,9 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { app } from 'electron';
 
 import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { APP_CONFIG } from './environments/environment';
 
-if (environment.production) {
+if (APP_CONFIG.production) {
   enableProdMode();
 }
 

@@ -17,8 +17,9 @@
       "dom"
     ]
   },
-  "files": [
-    "src/main.ts"
+  "include": [
+    "src/**/*",
+    "dist/**/*"
   ],
   "exclude": [
     "node_modules",
