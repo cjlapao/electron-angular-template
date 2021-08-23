@@ -42,7 +42,7 @@
     ]
   },
   "portable": {
-    "splashImage": "assets/icons/electron.bmp"
+    "splashImage": "dist/assets/icons/electron.bmp"
   },
   "mac": {
     "icon": "assets/icons",
