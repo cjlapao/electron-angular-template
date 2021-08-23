@@ -2,7 +2,7 @@
   "name": "electron-angular-template",
   "version": "0.0.0",
   "private": "true",
-  "main": "app/main.js",
+  "main": "app/dist/main.js",
   "author": {
     "name": "Carlos Lapao",
     "email": "cjlapao@gmail.com",

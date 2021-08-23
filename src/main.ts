@@ -1,6 +1,5 @@
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { app } from 'electron';
 
 import { AppModule } from './app/app.module';
 import { APP_CONFIG } from './environments/environment';
