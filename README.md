@@ -4,23 +4,24 @@
 [![Make a pull request][prs-badge]][prs]
 [![License][license-badge]](LICENSE.md)
 
-[![Linux Build][linux-build-badge]][linux-build]
-[![MacOS Build][macos-build-badge]][macos-build]
-[![Windows Build][windows-build-badge]][windows-build]
+[![Build Ubuntu](https://github.com/cjlapao/electron-angular-template/actions/workflows/build-ubuntu.yml/badge.svg)](https://github.com/cjlapao/electron-angular-template/actions/workflows/build-ubuntu.yml)
+[![Build MacOS](https://github.com/cjlapao/electron-angular-template/actions/workflows/build-macos.yml/badge.svg)](https://github.com/cjlapao/electron-angular-template/actions/workflows/build-macos.yml)
+[![Build Windows](https://github.com/cjlapao/electron-angular-template/actions/workflows/build-windows.yml/badge.svg)](https://github.com/cjlapao/electron-angular-template/actions/workflows/build-windows.yml)
+[![CodeQL](https://github.com/cjlapao/electron-angular-template/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/cjlapao/electron-angular-template/actions/workflows/codeql-analysis.yml)
 
 [![Watch on GitHub][github-watch-badge]][github-watch]
 [![Star on GitHub][github-star-badge]][github-star]
-[![Tweet][twitter-badge]][twitter]
 
 # Introduction
 
 Bootstrap and package your project with Angular 12 and Electron 13 (Typescript + SASS + Hot Reload) for creating Desktop applications.
+this is based on the [https://github.com/maximegris/angular-electron](https://github.com/maximegris/angular-electron) and [https://github.com/electron/electron-quick-start](https://github.com/electron/electron-quick-start)
 
 Currently runs with:
 
-- Angular v12.1.2
-- Electron v13.1.7
-- Electron Builder v22.11.9
+- Angular v12.2.2
+- Electron v13.2.1
+- Electron Builder v22.11.7
 
 With this sample, you can:
 
@@ -37,7 +38,7 @@ With this sample, you can:
 *Clone this repository locally:*
 
 ``` bash
-git clone https://github.com/maximegris/angular-electron.git
+git clone https://github.com/cjlapao/electron-angular-template.git
 ```
 
 *Install dependencies with npm (used by Electron renderer process):*
@@ -135,7 +136,7 @@ Note: To make it work behind a proxy, you can add this proxy exception in your t
 
 ## Debug with VsCode
 
-[VsCode](https://code.visualstudio.com/) debug configuration is available! In order to use it, you need the extension [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome).
+[VsCode](https://code.visualstudio.com/) debug configuration is available! In order to use it, you need the extension [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug).
 
 Then set some breakpoints in your application's source code.
 
@@ -149,20 +150,10 @@ Please note that Hot reload is only available in Renderer process.
 
 [maintained-badge]: https://img.shields.io/badge/maintained-yes-brightgreen
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[license]: https://github.com/maximegris/angular-electron/blob/master/LICENSE.md
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-red.svg
 [prs]: http://makeapullrequest.com
 
-[linux-build-badge]: https://github.com/maximegris/angular-electron/workflows/Linux%20Build/badge.svg
-[linux-build]: https://github.com/maximegris/angular-electron/actions?query=workflow%3A%22Linux+Build%22
-[macos-build-badge]: https://github.com/maximegris/angular-electron/workflows/MacOS%20Build/badge.svg
-[macos-build]: https://github.com/maximegris/angular-electron/actions?query=workflow%3A%22MacOS+Build%22
-[windows-build-badge]: https://github.com/maximegris/angular-electron/workflows/Windows%20Build/badge.svg
-[windows-build]: https://github.com/maximegris/angular-electron/actions?query=workflow%3A%22Windows+Build%22
-
-[github-watch-badge]: https://img.shields.io/github/watchers/maximegris/angular-electron.svg?style=social
-[github-watch]: https://github.com/maximegris/angular-electron/watchers
-[github-star-badge]: https://img.shields.io/github/stars/maximegris/angular-electron.svg?style=social
-[github-star]: https://github.com/maximegris/angular-electron/stargazers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20angular-electron!%20https://github.com/maximegris/angular-electron%20%F0%9F%91%8D
-[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/maximegris/angular-electron.svg?style=social
+[github-watch-badge]: https://img.shields.io/github/watchers/cjlapao/electron-angular-template.svg?style=social
+[github-watch]: https://github.com/cjlapao/angular-electron/watchers
+[github-star-badge]: https://img.shields.io/github/stars/cjlapao/electron-angular-template.svg?style=social
+[github-star]: https://github.com/cjlapao/electron-angular-template/stargazers
