@@ -1,8 +1,6 @@
-## 10.1.0 (2021-07-17)
+## 0.0.2 (2021-07-17)
 
-* Upgrade to Angular 12.2.2
-
-
+* Added better readme documentation
 
 ## <small>0.0.1 (2021-08-23)</small>
 
