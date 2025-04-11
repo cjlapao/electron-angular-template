@@ -1,4 +1,5 @@
-###First check it exists a version of your library compatible with the version of Angular defined in package.json.
+### First check it exists a version of your library compatible with the version of Angular defined in package.json
+
 How to install ng-bootstrap
 
 ng add @ng-bootstrap/ng-bootstrap
@@ -16,7 +17,7 @@ ng add @angular/material
 You will get the following questions:
 
 ? Choose a prebuilt theme name, or "custom" for a custom theme: *Choose any theme you like here*
-? Set up global Angular Material typography styles? *Yes* 
+? Set up global Angular Material typography styles? *Yes*
 ? Set up browser animations for Angular Material? *Yes*
 
 Angular Material will start installing, but you will get the following error after installation:
